@@ -2,15 +2,15 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Lobster&display=swap');
 :root{
     --primary-color: #47b3a7;
-    --secondary-color: #c4bb9c;
+    --secondary-color: #AF916E;
     --accent1-color: #bde0d8;
-    --accent2-color: #c4bb9c;
+    --accent2-color: #100F0F;
 
     --heading-font: 'Lobster', Sans;
     --paragraph-font: 'IBM Plex Sans', Sans;
     --nav-background-color: #47b3a7;
-    --nav-link-color: #c4bb9c;
-    --nav-hover-link-color: #c4bb9c;
+    --nav-link-color: #100F0F;
+    --nav-hover-link-color: #AF916E;
     --nav-hover-background-color: #bde0d8;
 }
 body {
