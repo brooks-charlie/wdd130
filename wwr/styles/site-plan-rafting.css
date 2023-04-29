@@ -11,7 +11,7 @@
     --nav-background-color: #47b3a7;
     --nav-link-color: #c4bb9c;
     --nav-hover-link-color: #c4bb9c;
-    --nav-hovor-background-color: #bde0d8;
+    --nav-hover-background-color: #bde0d8;
 }
 body {
     font-family: var(--paragraph-font);
@@ -45,5 +45,5 @@ nav a:link, nav a:visited {
 }
 nav a:hover {
     color: var(--nav-hover-link-color);
-    background-color: var(--nav-hovor-background-color);
+    background-color: var(--nav-hover-background-color);
 }
