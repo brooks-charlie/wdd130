@@ -10,6 +10,7 @@ aside{
     width: 20em;
     text-align: center;
     position: relative;
+    position: unset;
 }
 aside img{
     width: 200px;
