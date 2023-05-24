@@ -22,29 +22,71 @@ h1, h2, h3, h4, h5, h6 {
     color:var(--accent2-color)
 }
 header {
-    padding: 20px;
+   
     background-color: var(--accent1-color);
+    margin: 2rem auto;
+	display: grid;
+	grid-template-columns: 180px auto;
+	align-items: center;
+	border-bottom: 1px solid #ccc;
+	max-width: 1000px;
+    
+}
+header img {
+	margin: 0 0.25rem 0 1rem;
+	width: 164px;
+	height: auto;
 }
 p {
     padding: 25px;
 }
 nav {
-    background-color: var(--nav-background-color);
-    font-size: 1.2rem;
     display: flex;
+    text-align: left;
+    align-items: center;
+    flex-direction: column;
+    
+	
 }
-nav a {
-    display: block;
-    color: var(--nav-link-color);
-    text-decoration: none;
-    padding: 1rem;
+.navigation{
+	display: flex;
+	list-style: none;
+    font-size: 1.5rem; 
+    text-align: left;
 }
+ul {
+    list-style-type: disc;
+    margin-top:2em;
+    margin-bottom: 2em;
+    padding-inline-start: 0px;
+
+}
+
+.navigation li {
+	 /* flex: 1;  */
+     
+}
+.navigation a {
+	display: block;
+	color: navy;
+	padding: 20px;
+	text-decoration: none;
+}
+
+.navigation a:hover {
+	color: var(--nav-hover-link-color);
+	/* font-weight: 700; */
+	text-decoration: underline;
+}
+
 nav a:link, nav a:visited {
     color:var(--nav-link-color)
 }
 nav a:hover {
     color: var(--nav-hover-link-color);
     background-color: var(--nav-hover-background-color);
+	font-weight: 700;
+	text-decoration: underline;
 }
 .hero{
     position: relative;
@@ -78,6 +120,70 @@ h1{
     float: right;
     opacity: 1;
 }
+
+
+.history img {
+	width: auto;
+	height: 150px;
+    /* position: relative; */
+    
+    /* top: 0px; */
+    float: left;
+    /* opacity: 1; */
+    padding: 20px;
+}
+.history{
+    /* position: static; */
+	/* top: 0px; */
+	/* left: 15px; */
+    /* right: 15px; */
+	/* background: radial-gradient(#47b3a7, #bde0d8); */
+	border: 1px solid #000;
+	/* padding: 0.65rem; */
+	/* box-shadow: 0 0 30px var(--accent1-color); */
+	/* opacity: .9; */
+
+}
+section h2{
+    text-align: center;
+}
+
 section img{
-    width: 100%;
+    /* width: 100%; */
+}
+.adventure{
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+ 
+}
+.adventure img{
+        width: auto;
+        height: 130px;
+    
+}
+figure {
+    border: thin #c0c0c0 solid;
+    display: flex;
+    flex-flow: column;
+    max-width: 220px;
+    margin-right: 0px;
+    margin-left: 0;
+}
+
+figcaption {
+    background-color: #222;
+    color: #fff;
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: center;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+}
+.sociallinks{
+
+    flex-direction: row;
+
 }
