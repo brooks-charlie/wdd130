@@ -151,24 +151,33 @@ section h2{
 section img{
     /* width: 100%; */
 }
-.adventure{
+.adventure, .team{
     display: flex;
     flex: 1;
     justify-content: space-between;
  
 }
-.adventure img{
-        width: auto;
-        height: 130px;
+
+.adventure img {
+    width: auto;
+    height: 130px;
     
+}
+.team img{
+    width: 130px;
+    /* height: 130px; */
 }
 figure {
     border: thin #c0c0c0 solid;
     display: flex;
     flex-flow: column;
     max-width: 220px;
-    margin-right: 0px;
-    margin-left: 0;
+
+}
+.team figure img{
+
+    width: 130px;
+    height: auto;
 }
 
 figcaption {
@@ -186,4 +195,114 @@ footer{
 
     flex-direction: row;
 
+}
+
+/* @import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto&display=swap'); */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Merriweather, Georgia, serif;
+    font-size: 1.2em;
+    color: #333;
+    background: #fff;
+}
+header{
+    margin: 0 auto;
+    width: 650px;
+
+}
+h1{
+    margin: 1rem;
+    font-size: 1.5em;
+    color:navy;
+    text-align: center;
+}
+form{
+    /* width: 650px; */
+    margin: 0 ;
+    padding: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    background-color: #eee;
+    display: grid;
+
+}
+fieldset{
+    display: grid;
+    grid-gap: .5rem;
+    margin: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+}
+legend{
+    padding: 0.5rem;
+    color: navy;
+    font-size: 1.3rem;
+}
+label,input,button,select,textarea{
+    font-family: Roboto, Arial, sans-serif;
+}
+label{
+    text-align: right;
+    padding-right: 1rem;
+
+}
+input,select,textarea{
+    padding: 0.5rem;
+    font-size: 1.1rem;
+    width: 100%;
+}
+input[type="checkbox"]{
+    width: 22px;
+    height: 22px;
+    vertical-align: bottom;
+}
+button{
+    margin: 1rem;
+    background-color: navy;
+    color: #fff;
+    border: none;
+    border-radius: .5rem;
+    padding: .75rem;
+    font-size: 1.2rem;
+}
+button:hover{
+    background-color: darkgreen;
+}
+footer{
+    margin: 1rem auto 0;
+    width: 650px;
+    text-align: center;
+    font-size: 0.8em;
+    color: #777;
+    border-top: 1px solid #ccc;
+}
+.form-item{
+    display: grid;
+    align-items: center;
+}
+.column1{
+    grid-template-columns: 3fr 1fr;
+    margin: 0.5rem 0;
+}
+.column2{
+    grid-template-columns: 1fr 2fr;
+}
+label[for="feedback"]{
+    text-align: center;
+}
+.team{
+    /* margin-top: 4em; */
+    display: flex;
+    flex: auto;
+    flex-direction: row;
+    justify-content:space-around;
+}
+.location{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
