@@ -12,11 +12,6 @@
     --nav-hover-link-color: #AF916E;
     --nav-hover-background-color: #bde0d8;
 }
-body {
-    /* font-family: var(--paragraph-font); */
-    /* max-width: 960px; */
-    /* padding: 20px; */
-}
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
     color:var(--accent2-color)
@@ -69,12 +64,6 @@ ul {
     margin-top:2em;
     margin-bottom: 2em;
     padding-inline-start: 0px;
-
-}
-
-.navigation li {
-	 /* flex: 1;  */
-     
 }
 .navigation a {
 	display: block;
@@ -128,7 +117,7 @@ nav a:hover {
     left: 20%;
 }
 .hero-home h1{
-    color:AF916E;
+    color:#AF916E;
 }
 
 
@@ -177,10 +166,6 @@ nav a:hover {
 }
 section h2{
     text-align: center;
-}
-
-section img{
-    /* width: 100%; */
 }
 .adventure, .team{
     display: flex;
